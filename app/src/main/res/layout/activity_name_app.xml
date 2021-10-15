@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME APP"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/name_app_image"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+
+        />
+    <LinearLayout
+        android:layout_width="@dimen/_190sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:id="@+id/tv_english"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="English"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_9sdp"
+            android:background="@drawable/button_background"
+            />
+        <TextView
+            android:id="@+id/tv_persian"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="فارسی"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_9sdp"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

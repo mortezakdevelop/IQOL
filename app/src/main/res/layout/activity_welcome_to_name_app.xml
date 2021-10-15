@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="@dimen/_25sdp"
+    tools:context=".WelcomeToNameApp">
+
+
+    <ImageView
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_190sdp"
+        android:src="@drawable/large_lamp" />
+
+    <TextView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="WELCOME TO 'NAME APP'"
+        android:textSize="@dimen/_20ssp" />
+
+    <TextView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/yellow_background"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="sign in"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_now_background"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="register now"
+        android:textColor="@color/yellow" />
+
+</LinearLayout>
