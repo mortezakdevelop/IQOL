@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.AttributeSet
 import android.view.View
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.iqoldemo.Adapter.ServiceTopItemsAdapter
 import com.example.iqoldemo.databinding.ServiceBinding
@@ -139,7 +140,7 @@ class WaveFrame @JvmOverloads constructor(
     var moveX = 0f
     var paint = Paint().apply {
         isAntiAlias = true
-        color = Color.BLUE
+        color = ResourcesCompat.getColor(context.resources,R.color.blue,null)
         strokeWidth = 5f
         style = Paint.Style.FILL
     }
