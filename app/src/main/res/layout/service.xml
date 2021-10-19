@@ -9,11 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <FrameLayout
+        <com.example.iqoldemo.WaveFrame
             android:id="@+id/service_top_frame_layout"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:background="@color/blue"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -54,7 +53,9 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/service_top_list">
-
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -123,6 +124,7 @@
                                         android:autoSizeTextType="uniform"
                                         android:gravity="center"
                                         android:text="30%"
+                                        android:textStyle="bold"
                                         android:textColor="@color/white"
                                         app:layout_constraintBottom_toBottomOf="@id/service_percent_circle"
                                         app:layout_constraintEnd_toEndOf="@id/service_percent_circle"
@@ -212,16 +214,20 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
-
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="0dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="25dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
-
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -242,36 +248,19 @@
                                 <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="2">
-
-                                    <androidx.appcompat.widget.AppCompatImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/ribbon"
-                                        app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintEnd_toEndOf="parent"
-                                        app:layout_constraintHorizontal_bias="0.2"
-                                        app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintTop_toTopOf="parent"
-                                        app:layout_constraintWidth_percent="0.4" />
-                                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                                <androidx.constraintlayout.widget.ConstraintLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
                                     android:layout_weight="1">
 
                                     <androidx.appcompat.widget.AppCompatImageView
                                         android:id="@+id/service_percent_circle_2"
                                         android:layout_width="0dp"
                                         android:layout_height="0dp"
-                                        android:src="@drawable/circle_2"
+                                        android:src="@drawable/circle_red"
                                         app:layout_constraintBottom_toBottomOf="parent"
                                         app:layout_constraintDimensionRatio="1:1"
                                         app:layout_constraintEnd_toEndOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toTopOf="parent"
-                                        app:layout_constraintWidth_percent="0.6" />
+                                        app:layout_constraintWidth_percent="0.5" />
 
                                     <androidx.appcompat.widget.AppCompatTextView
                                         android:layout_width="0dp"
@@ -280,13 +269,32 @@
                                         android:autoSizeMinTextSize="1sp"
                                         android:autoSizeTextType="uniform"
                                         android:gravity="center"
-                                        android:text="30%"
+                                        android:text="20%"
+                                        android:textStyle="bold"
                                         android:textColor="@color/white"
                                         app:layout_constraintBottom_toBottomOf="@id/service_percent_circle_2"
                                         app:layout_constraintEnd_toEndOf="@id/service_percent_circle_2"
                                         app:layout_constraintStart_toStartOf="@id/service_percent_circle_2"
                                         app:layout_constraintTop_toTopOf="@id/service_percent_circle_2" />
                                 </androidx.constraintlayout.widget.ConstraintLayout>
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/mask_group"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.8"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintWidth_percent="0.7" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                             </androidx.appcompat.widget.LinearLayoutCompat>
                             <com.example.iqoldemo.DesignCircles
                                 android:layout_width="match_parent"
@@ -313,7 +321,7 @@
                                 <androidx.appcompat.widget.AppCompatTextView
                                     android:layout_width="0dp"
                                     android:layout_weight="2"
-                                    android:text="2 month"
+                                    android:text="3 month"
                                     android:layout_margin="6dp"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                                     android:autoSizeMinTextSize="1sp"
@@ -336,7 +344,7 @@
                                 <androidx.appcompat.widget.AppCompatTextView
                                     android:layout_width="0dp"
                                     android:layout_weight="2"
-                                    android:text="35.99$"
+                                    android:text="19.99$"
                                     android:layout_margin="6dp"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                                     android:autoSizeMinTextSize="1sp"

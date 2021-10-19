@@ -30,6 +30,7 @@
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/button_background.xml" value="0.2101851851851852" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/image_back_border.xml" value="0.23958333333333334" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/login_background.xml" value="0.23958333333333334" />
+        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/test.xml" value="0.23958333333333334" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/text_back_border.xml" value="0.2101851851851852" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/activity_login.xml" value="0.15217391304347827" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/activity_main.xml" value="0.21927083333333333" />
@@ -42,8 +43,9 @@
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/home_layout.xml" value="0.5043936731107206" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/item_topic.xml" value="0.21927083333333333" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/register_enter_pin.xml" value="0.21927083333333333" />
-        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/service.xml" value="0.4" />
+        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/service.xml" value="0.152" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/service_top_item.xml" value="0.72" />
+        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/test.xml" value="0.2" />
       </map>
     </option>
   </component>
