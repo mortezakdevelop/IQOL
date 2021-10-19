@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="8dp"
+    android:layout_height="80dp">
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/image_back_border">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/service_top_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:src="@drawable/group_29" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/service_top_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text = "name"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_weight="1"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

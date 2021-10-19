@@ -28,6 +28,7 @@
         <entry key="..\:/Users/sahar.r/AndroidStudioProjects/IQOLDemo/app/src/main/res/layout/name_app_layout.xml" value="0.33" />
         <entry key="..\:/Users/sahar.r/AndroidStudioProjects/IQOLDemo/app/src/main/res/layout/register_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/button_background.xml" value="0.2101851851851852" />
+        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/image_back_border.xml" value="0.23958333333333334" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/login_background.xml" value="0.23958333333333334" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/drawable/text_back_border.xml" value="0.2101851851851852" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/activity_login.xml" value="0.15217391304347827" />
@@ -38,9 +39,11 @@
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/activity_register_otp.xml" value="0.21927083333333333" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/activity_welcome_to_name_app.xml" value="0.21927083333333333" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/home.xml" value="0.21927083333333333" />
-        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/home_layout.xml" value="0.2" />
+        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/home_layout.xml" value="0.5043936731107206" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/item_topic.xml" value="0.21927083333333333" />
         <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/register_enter_pin.xml" value="0.21927083333333333" />
+        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/service.xml" value="0.264" />
+        <entry key="..\:/temp/IQl/IQOL/app/src/main/res/layout/service_top_item.xml" value="0.72" />
       </map>
     </option>
   </component>

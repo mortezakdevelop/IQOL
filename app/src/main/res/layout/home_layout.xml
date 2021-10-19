@@ -193,11 +193,11 @@
 
                             <com.google.android.material.progressindicator.LinearProgressIndicator
                                 android:layout_width="match_parent"
-                                android:layout_height="0dp"
+                                android:layout_height="20dp"
                                 app:indicatorColor="@color/blue"
                                 app:indicatorDirectionLinear="startToEnd"
                                 app:trackCornerRadius="16dp"
-                                tools:progress="45" />
+                                android:progress="45" />
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
                         <Space
@@ -444,11 +444,12 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="0dp"
+                            app:layout_constraintVertical_bias="0"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="score"
                             android:textColor="@color/blue"
-                            app:autoSizeMinTextSize="1dp"
+                            app:autoSizeMinTextSize="1sp"
                             app:autoSizeTextType="uniform"
                             app:layout_constraintBottom_toBottomOf="@id/home_percent_image"
                             app:layout_constraintEnd_toEndOf="@id/home_percent_text"
