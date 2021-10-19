@@ -7,7 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <FrameLayout
             android:id="@+id/service_top_frame_layout"
@@ -28,20 +28,22 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@id/service_top_frame_layout"
             app:layout_constraintTop_toBottomOf="@id/service_top_frame_layout">
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="25dp"
-                app:cardCornerRadius="16dp"
                 android:layout_marginVertical="16dp"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="12dp">
+
                 <androidx.recyclerview.widget.RecyclerView
-                    android:layout_marginVertical="8dp"
                     android:id="@+id/service_recycler_view"
-                    android:orientation="horizontal"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
             </com.google.android.material.card.MaterialCardView>
         </FrameLayout>
@@ -55,51 +57,320 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="200dp"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:background="#FF53C6"
-                        android:layout_height="0dp"/>
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"/>
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:background="#FF53C6"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ribbon"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.2"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintWidth_percent="0.4" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/service_percent_circle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:src="@drawable/circle_2"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintDimensionRatio="1:1"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintWidth_percent="0.6" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_margin="8dp"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeTextType="uniform"
+                                        android:gravity="center"
+                                        android:text="30%"
+                                        android:textColor="@color/white"
+                                        app:layout_constraintBottom_toBottomOf="@id/service_percent_circle"
+                                        app:layout_constraintEnd_toEndOf="@id/service_percent_circle"
+                                        app:layout_constraintStart_toStartOf="@id/service_percent_circle"
+                                        app:layout_constraintTop_toTopOf="@id/service_percent_circle" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <com.example.iqoldemo.DesignCircles
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginVertical="8dp"
+                            android:layout_weight="1">
+                            <Space
+                                android:layout_width="16dp"
+                                android:layout_height="match_parent"/>
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/clock"
+                                    android:layout_height="match_parent"/>
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:text="2 month"
+                                    android:layout_margin="6dp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:autoSizeMinTextSize="1sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent"/>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <Space
+                                android:layout_width="25dp"
+                                android:layout_height="match_parent"/>
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/money"
+                                    android:layout_height="match_parent"/>
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:text="35.99$"
+                                    android:layout_margin="6dp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:autoSizeMinTextSize="1sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent"/>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <Space
+                                android:layout_width="25dp"
+                                android:layout_height="match_parent"/>
+                            <FrameLayout
+                                android:background="@drawable/text_back_border"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_margin="8dp"
+                                    android:text = "Details"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/blue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </FrameLayout>
+                            <Space
+                                android:layout_width="16dp"
+                                android:layout_height="match_parent"/>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="200dp"
                 android:layout_marginHorizontal="16dp"
-                android:layout_marginVertical="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:background="#6500FF"
-                        android:layout_height="0dp"/>
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"/>
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:background="#6500FF"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ribbon"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.2"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintWidth_percent="0.4" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/service_percent_circle_2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:src="@drawable/circle_2"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintDimensionRatio="1:1"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintWidth_percent="0.6" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_margin="8dp"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeTextType="uniform"
+                                        android:gravity="center"
+                                        android:text="30%"
+                                        android:textColor="@color/white"
+                                        app:layout_constraintBottom_toBottomOf="@id/service_percent_circle_2"
+                                        app:layout_constraintEnd_toEndOf="@id/service_percent_circle_2"
+                                        app:layout_constraintStart_toStartOf="@id/service_percent_circle_2"
+                                        app:layout_constraintTop_toTopOf="@id/service_percent_circle_2" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <com.example.iqoldemo.DesignCircles
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </FrameLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginVertical="8dp"
+                            android:layout_weight="1">
+                            <Space
+                                android:layout_width="16dp"
+                                android:layout_height="match_parent"/>
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/clock"
+                                    android:layout_height="match_parent"/>
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:text="2 month"
+                                    android:layout_margin="6dp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:autoSizeMinTextSize="1sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent"/>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <Space
+                                android:layout_width="25dp"
+                                android:layout_height="match_parent"/>
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/money"
+                                    android:layout_height="match_parent"/>
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:text="35.99$"
+                                    android:layout_margin="6dp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:autoSizeMinTextSize="1sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent"/>
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <Space
+                                android:layout_width="25dp"
+                                android:layout_height="match_parent"/>
+                            <FrameLayout
+                                android:background="@drawable/text_back_border"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_margin="8dp"
+                                    android:text = "Details"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/blue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </FrameLayout>
+                            <Space
+                                android:layout_width="16dp"
+                                android:layout_height="match_parent"/>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </com.google.android.material.card.MaterialCardView>
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 
