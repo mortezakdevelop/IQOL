@@ -40,6 +40,9 @@
                     android:id="@+id/service_recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    tools:itemCount="8"
+                    tools:listitem="@layout/service_top_item"
                     android:layout_marginVertical="8dp"
                     android:orientation="horizontal"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
@@ -195,6 +198,8 @@
                                 android:background="@drawable/text_back_border"
                                 android:layout_weight="1"
                                 android:layout_width="0dp"
+                                android:clickable="true"
+                                android:focusable="true"
                                 android:layout_height="match_parent">
                                 <androidx.appcompat.widget.AppCompatTextView
                                     android:layout_margin="8dp"
@@ -358,6 +363,8 @@
                             <FrameLayout
                                 android:background="@drawable/text_back_border"
                                 android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent">
                                 <androidx.appcompat.widget.AppCompatTextView
