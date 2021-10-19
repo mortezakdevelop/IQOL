@@ -25,6 +25,7 @@ import kotlin.math.tanh
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.intro_slider_4)
 //        setContentView(R.layout.test)
 //        setContentView(R.layout.register_enter_pin)
 //        setContentView(R.layout.home_layout)
