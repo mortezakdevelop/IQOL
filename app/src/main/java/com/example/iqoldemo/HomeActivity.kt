@@ -17,10 +17,7 @@ import com.example.iqoldemo.databinding.ServiceBinding
 import java.util.*
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors
-import kotlin.math.PI
-import kotlin.math.abs
-import kotlin.math.sin
-import kotlin.math.tanh
+import kotlin.math.*
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +34,8 @@ class HomeActivity : AppCompatActivity() {
 
 class DesignCircles @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-) : View(context, attrs, defStyleAttr) {
+) :
+    View(context, attrs, defStyleAttr) {
     var paint = Paint().apply {
         isAntiAlias = true
         color = Color.argb(120, 250, 250, 250)
@@ -47,8 +45,8 @@ class DesignCircles @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         canvas?.let { canvas ->
-            var x = width / 15f
-            var y = height / 10f
+            val x = width / 15f
+            val y = height / 10f
             fun exp2(input: Float): Float {
                 return tanh(input.toDouble()).toFloat()
             }
@@ -57,9 +55,9 @@ class DesignCircles @JvmOverloads constructor(
                 if (
                     i !in listOf(0, 3, 6, 7)
                 ) {
-                    var x = (i / 10f) * width
-                    var y = exp2(i / 10f) * height
-                    var r = sin((i / 10f) * PI) * 25f
+                    val x = (i / 10f) * width
+                    val y = exp2(i / 10f) * height
+                    val r = sin((i / 10f) * PI) * 25f
                     canvas.drawCircle(x, y, r.toFloat(), paint)
                 }
             }
@@ -67,9 +65,9 @@ class DesignCircles @JvmOverloads constructor(
                 if (
                     i !in listOf(4, 2, 1)
                 ) {
-                    var x = ((i / 10f) + 0.2f) * width
-                    var y = (exp2(i / 10f) - 0.2f) * height
-                    var r = sin((i / 10f) * PI) * 15f
+                    val x = ((i / 10f) + 0.2f) * width
+                    val y = (exp2(i / 10f) - 0.2f) * height
+                    val r = sin((i / 10f) * PI) * 15f
                     canvas.drawCircle(x, y, r.toFloat(), paint)
                 }
             }
@@ -77,9 +75,9 @@ class DesignCircles @JvmOverloads constructor(
                 if (
                     i in listOf(0, 1, 2, 3)
                 ) {
-                    var x = ((i / 10f) - 0.1f) * width
-                    var y = (exp2(i / 10f) + 0.1f) * height
-                    var r = sin((i / 10f) * PI) * 11f
+                    val x = ((i / 10f) - 0.1f) * width
+                    val y = (exp2(i / 10f) + 0.1f) * height
+                    val r = sin((i / 10f) * PI) * 11f
                     canvas.drawCircle(x, y, r.toFloat(), paint)
                 }
             }
@@ -87,9 +85,9 @@ class DesignCircles @JvmOverloads constructor(
                 if (
                     i !in listOf(7, 1, 5, 3)
                 ) {
-                    var x = ((i / 10f)) * width
-                    var y = (exp2(i / 10f) + 0.2f) * height
-                    var r = sin((i / 10f) * PI) * 11f
+                    val x = ((i / 10f)) * width
+                    val y = (exp2(i / 10f) + 0.2f) * height
+                    val r = sin((i / 10f) * PI) * 11f
                     canvas.drawCircle(x, y, r.toFloat(), paint)
                 }
             }
@@ -101,47 +99,20 @@ class DesignCircles @JvmOverloads constructor(
             canvas.drawCircle(x * 4.2f, y * 5.5f, 15f, paint)
             canvas.drawCircle(x * 13, y * 8, 26f, paint)
             canvas.drawCircle(x * 10, y * 6, 16f, paint)
-
-
-//            for (i in 0 until 10) {
-//                for (j in 0 until 5) {
-//                    canvas.drawCircle(
-//                        x * i,
-//                        y * j,
-//                        Random(Calendar.getInstance().timeInMillis).nextInt(20).toFloat(),
-//                        Paint().apply {
-//                            color = Color.argb(120, 250, 250, 250)
-//                            isAntiAlias = true
-//                        })
-//                }
-//            }
-//            x = width/20f
-//            y = height/10f
-//            for (i in 0 until 20) {
-//                for (j in 0 until 10) {
-//                    canvas.drawCircle(
-//                        x * i,
-//                        y * j,
-//                        Random(Calendar.getInstance().timeInMillis).nextInt(5).toFloat(),
-//                        Paint().apply {
-//                            color = Color.argb(30, 250, 250, 250)
-//                            isAntiAlias = true
-//                        })
-//                }
-//            }
         }
     }
 }
 
 class WaveFrame @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-) : View(context, attrs, defStyleAttr) {
+) :
+    View(context, attrs, defStyleAttr) {
     var path = Path()
     var count = 1f
     var moveX = 0f
     var paint = Paint().apply {
         isAntiAlias = true
-        color = ResourcesCompat.getColor(context.resources,R.color.blue,null)
+        color = ResourcesCompat.getColor(context.resources, R.color.blue, null)
         strokeWidth = 5f
         style = Paint.Style.FILL
     }
@@ -150,11 +121,14 @@ class WaveFrame @JvmOverloads constructor(
         Executors.newSingleThreadExecutor().execute {
             var count = 0f
             do {
-                Thread.sleep(40)
-                count += 0.01f
-                moveX += ((PI / 20f).toFloat())
-                var sin = abs(sin(count * PI)*sin(count * PI)).toFloat()
-                this.count = sin * 3f
+                Thread.sleep(30)
+                count += 0.005f
+                moveX += ((PI / 60f).toFloat())
+                if (moveX % (PI / 2f) == 0.0) {
+                    moveX = 0f
+                }
+                var sin = (sin(count * PI) * sin(count * PI)).toFloat()
+                this.count = exp(-(sin) * (sin) * 0.09f)
                 postInvalidate()
             } while (true)
         }
@@ -167,7 +141,7 @@ class WaveFrame @JvmOverloads constructor(
         for (i in 0..100) {
             var x = dx * i
             var y =
-                ((1 + sin(moveX + (x / width) * count * PI)) / 2f) * (height / 5f) + (0.8f * height)
+                ((1 + sin(moveX + (x / width) * count * PI)) / 2f) * (height / 4f) + (0.75f * height)
             lineTo(x, y.toFloat())
         }
         lineTo(width, 0f)
