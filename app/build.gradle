@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -33,6 +34,7 @@ android {
     dataBinding {
         enabled true
     }
+
     buildFeatures {
         viewBinding true
     }
@@ -56,10 +58,23 @@ dependencies {
     //view pager 2 library
     implementation "androidx.viewpager2:viewpager2:1.0.0"
 
+    def navigation = "+"
+    // Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation"
+
     // circle indicator
     implementation 'me.relex:circleindicator:2.1.4'
 
     //pin View
     implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    //dependency Injection
+    def hiltVersion = '+'
+    def hiltAndroidXVersion = '+'
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltAndroidXVersion"
+    kapt "androidx.hilt:hilt-compiler:$hiltAndroidXVersion"
 
 }
