@@ -30,8 +30,7 @@
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_120sdp"
             android:layout_gravity="center"
-
-            android:src="@drawable/login_image" />
+            android:src="@drawable/enrollment" />
 
         <TextView
             android:layout_marginTop="@dimen/_10sdp"

@@ -10,8 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IQOLDemo">
         <activity
+            android:name=".IntroSlider0Activity2"
+            android:exported="true" />
+        <activity
+            android:name=".InfoActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".customview.InfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".IntroSlider3Activity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,9 +50,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

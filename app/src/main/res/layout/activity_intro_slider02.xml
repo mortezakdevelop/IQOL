@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     tools:context=".OnBoardIntroActivity">
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/screen_viewPager"
         android:layout_width="0dp"
@@ -20,36 +21,48 @@
 
     <ImageView
         android:id="@+id/group32"
-        android:layout_width="342dp"
-        android:layout_height="411dp"
+        android:layout_width="360dp"
+        android:layout_height="340dp"
         android:layout_marginTop="92dp"
-        android:layout_marginEnd="36"
-        android:layout_marginRight="@dimen/_30sdp"
-        android:layout_marginLeft="@dimen/_30sdp"
-        android:src="@drawable/group32"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/idea"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toEndOf="parent"
-        app:layout_constraintLeft_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="300sp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="180dp"
+        android:text="Topic"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/register_now_background"
-        android:padding="@dimen/_9sdp"
-        android:layout_marginRight="@dimen/_30sdp"
-        android:layout_marginLeft="@dimen/_30sdp"
-        android:layout_marginBottom="@dimen/_50sdp"
-        android:gravity="center"
-        android:text="Show Service"
-        android:textSize="@dimen/_20sdp"
-        android:textColor="@color/yellow"
-        android:drawableTint="@color/design_default_color_primary"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:text="Lorem Ipsum is simply dummy text of
+the printing and typesetting industry.
+Lorem Ipsum has been the
+industry's standard dummy text ever
+since the 1500s, when an unknown."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
 
-
-        />
 
     <TextView
         android:id="@+id/skipped"
@@ -61,20 +74,28 @@
         android:textSize="@dimen/_15ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.055" />
 
     <ImageView
         android:id="@+id/iv_logo_onboard"
-        android:layout_margin="@dimen/_10sdp"
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/name_app_image"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:src="@drawable/name_app_image"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/ellips"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/15sdp"
+        android:src="@drawable/ic_group_107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
