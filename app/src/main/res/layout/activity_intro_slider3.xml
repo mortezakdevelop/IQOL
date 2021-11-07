@@ -107,7 +107,7 @@
     <ImageView
         android:id="@+id/ellips"
         android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/15sdp"
+        android:layout_height="@dimen/_15sdp"
         android:src="@drawable/ic_group_107"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

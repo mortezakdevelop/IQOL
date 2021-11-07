@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.github.ben-manes.versions' version '0.17.0'
 }
 
 android {
@@ -47,9 +48,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.sefford:circular-progress-drawable:1.31@aar'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.jackandphantom.android:circularprogressbar:1.2.0'
 
     // dimen library
     implementation 'com.intuit.ssp:ssp-android:1.0.5'
@@ -76,5 +79,10 @@ dependencies {
     kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltAndroidXVersion"
     kapt "androidx.hilt:hilt-compiler:$hiltAndroidXVersion"
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //for progress indicator
+    implementation 'com.github.antonKozyriatskyi:CircularProgressIndicator:1.3.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 
 }
