@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_38sdp"
         android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
         app:cardCornerRadius="15dp"
         app:cardBackgroundColor="@color/white"
         app:strokeColor="@color/very_light_gray"
@@ -88,7 +88,6 @@
         android:layout_marginEnd="25dp"
         android:textColor="@color/white"
         android:textSize="16sp"
-
         android:text="Sign Out"
         android:background="@drawable/btn_red"
         app:layout_constraintEnd_toEndOf="parent"
