@@ -11,11 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IQOLDemo">
         <activity
-            android:name=".settingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".changeProfileActivity"
-            android:exported="true">
+            android:name=".activeQuestionActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +20,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".dialogChangPassActivity"
+            android:name=".activeLessonActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".actionBarActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".settingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".changeProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dialogChangPassActivity"
+            android:exported="true" />
         <activity
             android:name=".home2Activity"
             android:exported="true"
